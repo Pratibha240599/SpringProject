@@ -4,6 +4,7 @@ public class Student {
 	private int studentId;
 	private String studentName;
 	private String studentAddress;
+	private String studentMobile;
 	
 	public int getStudentId() {
 		return studentId;
@@ -27,6 +28,12 @@ public class Student {
 		this.studentAddress = studentAddress;
 	}
 	
+	public String getStudentMobile() {
+		return studentMobile;
+	}
+	public void setStudentMobile(String studentMobile) {
+		this.studentMobile = studentMobile;
+	}
 	public Student(int studentId, String studentName, String studentAddress) {
 		super();
 		this.studentId = studentId;
