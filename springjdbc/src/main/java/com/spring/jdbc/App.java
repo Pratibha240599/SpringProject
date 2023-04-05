@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -20,12 +21,12 @@ public class App
     {
         System.out.println( "My Program Started...." );
         //spring jdbc=> JdbcTemplate
-        ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext(JdbcConfig.class);
         StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
         
         //INSERT
-        Student student = new Student();
-        student.setId(666);
+        /*Student student = new Student();
+        student.setId(668);
         student.setName("Pratibha");
         student.setCity("Noida");
         
@@ -34,7 +35,7 @@ public class App
         System.out.println("student added" + result);
         
         //UPDATE
-        /*Student student = new Student();
+        Student student = new Student();
         student.setId(222);
         student.setName("Sony");
         student.setCity("Delhi");
