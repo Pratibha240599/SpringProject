@@ -2,6 +2,12 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/data/tftpboot/springbootdemo/springemp"/>
+			<item value="/data/tftpboot/springbootdemo/springmvcsearch/src/main/java/springmvcsearch/MyExceptionHandler.java"/>
+			<item value="/data/tftpboot/springbootdemo/ProjectWithMaven/src/main/java/com/hql/HQLExample.java"/>
+			<item value="/data/tftpboot/springbootdemo/test/src/main/java/testdao/TestDao.java"/>
+			<item value="/data/tftpboot/springbootdemo/springjdbc"/>
+			<item value="/data/tftpboot/springbootdemo/springcore/src/main/java/com/java/programs/LeftRotate.java"/>
 			<item value="/data/tftpboot/spring-demo-annotations"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,12 +32,36 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.employee"/>
+			<item value="com.operation.productcrudapp"/>
+			<item value="com.spring.search"/>
+			<item value="com.spring.mvc"/>
+			<item value="com.spring.orm"/>
+			<item value="com.tut"/>
+			<item value="com.spring.test"/>
+			<item value="com.spring.jdbc"/>
 			<item value="com.springcore.springcore"/>
 		</list>
 		<list key="groupId">
+			<item value="employee"/>
+			<item value="com.operation"/>
+			<item value="com.spring.search"/>
+			<item value="com.spring.mvc"/>
+			<item value="com.spring.orm"/>
+			<item value="com.tut"/>
+			<item value="com.spring.test"/>
+			<item value="com.spring.jdbc"/>
 			<item value="com.springcore"/>
 		</list>
 		<list key="artifactId">
+			<item value="emp-project"/>
+			<item value="productcrudapp"/>
+			<item value="springmvcsearch"/>
+			<item value="springmvc"/>
+			<item value="springorm"/>
+			<item value="ProjectWithMaven"/>
+			<item value="test"/>
+			<item value="springjdbc"/>
 			<item value="springcore"/>
 		</list>
 		<list key="projectNameTemplate">

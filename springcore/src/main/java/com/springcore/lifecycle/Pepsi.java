@@ -1,6 +1,9 @@
 package com.springcore.lifecycle;
 
-public class Pepsi {
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Pepsi implements InitializingBean, DisposableBean {
 	private double price;
 
 	public double getPrice() {
@@ -19,6 +22,18 @@ public class Pepsi {
 	@Override
 	public String toString() {
 		return "Pepsi [price=" + price + "]";
+	}
+
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		//init
+		System.out.println("taking pepsi: init");
+	}
+
+	public void destroy() throws Exception {
+		// TODO Auto-generated method stub
+		//destroy
+		System.out.println("going to put bottle back to the shop : destroy");
 	}
 	
 	
