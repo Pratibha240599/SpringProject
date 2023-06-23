@@ -84,7 +84,7 @@ public class SpringbootprojectApplication {
 
 		List<User> users = userRepository.findByNameAndCity("Sumit","Delhi");
 		users.forEach(e ->
-				System.out.println(e));*/
+				System.out.println(e));
 
 		List<User> allUser = userRepository.getAllUser();
 		allUser.forEach(e ->
@@ -98,7 +98,7 @@ public class SpringbootprojectApplication {
 
 		System.out.println("--------------------------------------------------------");
 
-		userRepository.getUsers().forEach(e ->System.out.println(e));
+		userRepository.getUsers().forEach(e ->System.out.println(e));*/
 	}
 
 }
