@@ -1,5 +1,6 @@
 package com.practice.controller;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -36,5 +37,47 @@ public class MyController {
         m.addAttribute("list1", list);
 
         return "iterate";
+    }
+
+    //handle for conditional statements
+    @GetMapping("/condition")
+    public String conditionHandler(Model m)
+    {
+        System.out.println("conditional handler executed...");
+        m.addAttribute("isActive", true);
+        m.addAttribute("gender", "F");
+
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(233);
+        list2.add(43);
+        list2.add(53);
+        list2.add(6456);
+        list2.add(64);
+
+        m.addAttribute("mylist", list2);
+        return "condition";
+    }
+
+    //handler for including fragments
+    @GetMapping("/service")
+    public String servicesHandler(Model m)
+    {
+        m.addAttribute("title", "I like to eat samosa");
+        m.addAttribute("subtitle", LocalDateTime.now().toString());
+        return "service";
+    }
+
+    //for new about
+    @GetMapping("/newabout")
+    public String newAbout()
+    {
+        return "aboutnew";
+    }
+
+    //for contact
+    @GetMapping("/contact")
+    public String contact()
+    {
+        return "contact";
     }
 }
