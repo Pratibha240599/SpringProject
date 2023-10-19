@@ -105,6 +105,10 @@ public class Contact {
         this.user = user;
     }
 
+    public boolean equals(Object obj)
+    {
+        return this.cId==((Contact)obj).getcId();
+    }
     
     
     
